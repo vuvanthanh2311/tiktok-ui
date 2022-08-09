@@ -1,9 +1,9 @@
-function NoLayout() {
+function Error() {
     return (
         <>
-            <h1>NoLayout Page</h1>
+            <h1>Error Page</h1>
         </>
     );
 }
 
-export default NoLayout;
+export default Error;

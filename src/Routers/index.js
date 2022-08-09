@@ -3,12 +3,13 @@ import Home from '../pages/Home';
 import Upload from '../pages/Upload';
 import Error from '../pages/Error';
 
-import headerOnly from '../Layout/HeaderOnly';
-import NoLayout from '../Layout/NoLayout';
+import DefaultLayout from '../components/Layout/DefaultLayout';
+import headerOnly from '../components/Layout/HeaderOnly';
+import NoLayout from '../components/Layout/NoLayout';
 
 const publicRouter = [
-    { path: '/', element: Home },
-    { path: '/following', element: Following },
+    { path: '/', element: Home, layout: DefaultLayout },
+    { path: '/following', element: Following, layout: DefaultLayout },
     { path: '/upload', element: Upload, layout: headerOnly },
     { path: '/nolayout', element: Error, layout: NoLayout },
 ];

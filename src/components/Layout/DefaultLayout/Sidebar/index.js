@@ -1,8 +1,12 @@
+import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+import styles from './Sidebar.module.scss';
+
+const cx = classNames.bind(styles);
 
 function Sidebar() {
     return (
-        <div className="nav">
+        <aside className={cx('wrapper')}>
             <ul>
                 <li>
                     <Link to={'/'}> Home page</Link>
@@ -17,7 +21,7 @@ function Sidebar() {
                     <Link to={'/error'}> Error page</Link>
                 </li>
             </ul>
-        </div>
+        </aside>
     );
 }
 
