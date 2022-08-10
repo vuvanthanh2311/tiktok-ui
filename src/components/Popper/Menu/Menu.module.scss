@@ -1,0 +1,18 @@
+.menu-list {
+    min-width: 224px;
+    .menu-item {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0px;
+        width: 100%;
+        font-weight: 600;
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+.custom-poper-wrapper {
+    padding-bottom: 8px;
+}
